@@ -11,7 +11,7 @@ function CommingEvents() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('https://server-side-baqibilla00-gmailcom.vercel.app/events').then((result) => {
+    axios.get('https://foodbuzz-server-side.vercel.app/events').then((result) => {
       setEvents(result.data);
       setIsLoading(false);
     });

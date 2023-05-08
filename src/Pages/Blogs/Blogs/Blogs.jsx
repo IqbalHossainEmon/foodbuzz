@@ -9,7 +9,7 @@ export default function Blogs() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`https://server-side-baqibilla00-gmailcom.vercel.app/blogs`).then((result) => {
+    axios.get(`https://foodbuzz-server-side.vercel.app/blogs`).then((result) => {
       setIsLoading(false);
       setBlogs(result.data);
     });

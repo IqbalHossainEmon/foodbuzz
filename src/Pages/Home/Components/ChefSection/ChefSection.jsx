@@ -10,7 +10,7 @@ export default function ChefSection() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('https://server-side-baqibilla00-gmailcom.vercel.app/chefsData').then((result) => {
+    axios.get('https://foodbuzz-server-side.vercel.app/chefsData').then((result) => {
       setIsLoading(false);
       setChefsData(result.data);
     });

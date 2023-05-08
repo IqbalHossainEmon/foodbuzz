@@ -14,7 +14,7 @@ export default function ChefsBanner({ chefID }) {
 
   useEffect(() => {
     axios
-      .get(`https://server-side-baqibilla00-gmailcom.vercel.app/detailChefsData/${chefID}`)
+      .get(`https://foodbuzz-server-side.vercel.app/detailChefsData/${chefID}`)
       .then((result) => {
         setIsLoading(false);
         setChefsData(result.data);

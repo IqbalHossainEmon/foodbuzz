@@ -9,7 +9,7 @@ export default function Recipes() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`https://server-side-baqibilla00-gmailcom.vercel.app/recipes`).then((result) => {
+    axios.get(`https://foodbuzz-server-side.vercel.app/recipes`).then((result) => {
       setIsLoading(false);
       setRecipes(result.data);
     });

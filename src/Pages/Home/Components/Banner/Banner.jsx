@@ -10,7 +10,7 @@ export default function Banner() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('https://server-side-baqibilla00-gmailcom.vercel.app/mainBanner').then((result) => {
+    axios.get('https://foodbuzz-server-side.vercel.app/mainBanner').then((result) => {
       setBannersData(result.data);
       setIsLoading(false);
     });
